@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>급여 업무 자동화 프로그램 안내</title>
+<title>서주무 자동화 자료실</title>
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#f6f5f1;color:#243b46;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;line-height:1.6}
@@ -14,21 +14,22 @@ h1{font-size:clamp(26px,3vw,40px);line-height:1.35;letter-spacing:-1.4px;margin:
 .hero{border-bottom:1px solid #d7deda;padding-bottom:30px;margin-bottom:24px}
 .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
 .meta span{font-size:12px;background:#e8ede8;color:#3d5d54;padding:5px 12px;border-radius:20px}
-.scroll-hint{font-size:12px;color:#78857f;margin:0 0 14px}
+.contact{font-size:12px;font-weight:700;color:#35574f;margin:0 0 14px}
 .board{display:grid;grid-template-columns:repeat(5,minmax(205px,1fr));gap:16px;align-items:start;overflow-x:auto;padding-bottom:16px}
 .column{min-width:0}
 .category{display:flex;align-items:center;gap:8px;padding:14px 4px;border-top:3px solid #35574f;margin-bottom:10px}
 .category h2{font-size:18px;margin:0;letter-spacing:-.5px}
-.number{font-size:11px;color:#7f908a;align-self:center}
-.count{margin-left:auto;font-size:11px;color:#5b7269;background:#e4eae5;border-radius:50%;width:24px;height:24px;display:grid;place-items:center}
+.number{font-size:11px;color:#7f908a}
+.count{margin-left:auto;font-size:11px;color:#5b7269;background:#e4eae5;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;flex-shrink:0}
 .cards{display:flex;flex-direction:column;gap:12px}
-.card{background:#fff;border:1px solid #e0e4df;border-radius:12px;padding:20px 16px;box-shadow:0 3px 10px #283e3310}
+.card{width:100%;background:#fff;border:1px solid #e0e4df;border-radius:12px;padding:20px 16px;box-shadow:0 3px 10px #283e3310}
 .card h3{font-size:15px;line-height:1.65;font-weight:700;letter-spacing:-.35px;margin:0 0 12px;overflow-wrap:anywhere}
 .email{font-size:11px;line-height:1.7;margin:0 0 16px;color:#718078;overflow-wrap:anywhere}
-.download{font:inherit;font-size:12px;display:flex;align-items:center;justify-content:space-between;width:100%;min-height:38px;padding:8px 12px;border-radius:6px;text-decoration:none;background:#304e47;color:#fff;border:1px solid #304e47;transition:background .15s}
+.download{font:inherit;font-size:12px;display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:38px;padding:8px 12px;border-radius:6px;text-decoration:none;background:#304e47;color:#fff;border:1px solid #304e47;transition:background .15s}
 .download:hover{background:#43685e}
 .download:focus-visible{outline:3px solid #c49a4b;outline-offset:3px}
 .download + .download{margin-top:8px}
+.subcategory{margin-top:28px}
 .update-source{margin:16px 0 6px}
 .update-label{display:block;font-weight:700;color:#35574f;margin:0 0 8px}
 footer{border-top:1px solid #d7deda;margin-top:24px;padding-top:18px;color:#7c8880;font-size:12px}
@@ -44,7 +45,6 @@ footer p{margin:0 0 6px}
   .board{grid-template-columns:repeat(5,1fr);overflow:visible;gap:8px}
   .card{padding:10px;break-inside:avoid}
   .card h3{font-size:12px}
-  .scroll-hint{display:none}
 }
 </style>
 </head>
@@ -59,33 +59,82 @@ footer p{margin:0 0 6px}
     </p>
     <div class="meta">
       <span>전체 15개 프로그램</span>
-      <span>5개 업무 구분</span>
+      <span>6개 업무 구분</span>
       <span>자료 연결 15개</span>
     </div>
   </header>
 
-  <p class="scroll-hint">
-    contact: gogoquick@sen.go.kr
-  </p>
+  <p class="contact">CONTACT: gogoquick@sen.go.kr</p>
 
   <div class="board">
 
-    <section class="column" aria-labelledby="cat0">
+    <!-- 첫 번째 열: 계약서 / 4대보험 -->
+    <div class="column">
+      <section aria-labelledby="contracts">
+        <header class="category">
+          <span class="number">01</span>
+          <h2 id="contracts">계약서</h2>
+          <span class="count">3</span>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <h3>메일 머지</h3>
+            <a class="download"
+               href="https://drive.google.com/uc?export=download&amp;id=1hCHz4o2g1eb0eqO1VFzrkZSE1qIzl8ZI">
+              사용안내 <span aria-hidden="true">↓</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>계약제교원 공개채용 업무자동화 프로그램</h3>
+            <a class="download"
+               href="http://sdgjedu.sen.go.kr/CMS/admserv/admserv06/admserv0606/admserv060601/1326037_5337.html"
+               target="_blank" rel="noopener noreferrer">
+              다운로드 <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>기간제근로자 공개채용 업무자동화 프로그램</h3>
+            <a class="download"
+               href="http://sdgjedu.sen.go.kr/CMS/admserv/admserv06/admserv0606/admserv060601/1325380_5337.html"
+               target="_blank" rel="noopener noreferrer">
+              다운로드 <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="subcategory" aria-labelledby="insurance">
+        <header class="category">
+          <span class="number">02</span>
+          <h2 id="insurance">4대보험</h2>
+          <span class="count">1</span>
+        </header>
+
+        <div class="cards">
+          <article class="card">
+            <h3>(급여)4대보험내역 자동 입력 프로그램</h3>
+            <a class="download"
+               href="https://buseo.sen.go.kr/buseo/bu10/user/bbs/BD_selectBbs.do?q_rowPerPage=10&amp;q_currPage=1&amp;q_sortName=&amp;q_sortOrder=&amp;q_searchKeyTy2=1005&amp;q_searchStartDt=&amp;q_searchEndDt=&amp;q_bbsSn=1240&amp;q_bbsDocNo=20240313091143910&amp;q_clsfNo=&amp;q_searchKeyTy=ttl___1002&amp;q_searchVal=%EC%97%91%EC%85%80"
+               target="_blank" rel="noopener noreferrer">
+              다운로드 <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- 두 번째 열: 급여 -->
+    <section class="column" aria-labelledby="payroll">
       <header class="category">
-        <span class="number">01</span>
-        <h2 id="cat0">급여</h2>
-        <span class="count">4</span>
+        <span class="number">03</span>
+        <h2 id="payroll">급여</h2>
+        <span class="count">3</span>
       </header>
 
       <div class="cards">
-        <article class="card">
-          <h3>메일 머지</h3>
-          <a class="download"
-             href="https://drive.google.com/uc?export=download&amp;id=1hCHz4o2g1eb0eqO1VFzrkZSE1qIzl8ZI">
-            사용안내 <span aria-hidden="true">↓</span>
-          </a>
-        </article>
-
         <article class="card">
           <h3>(급여)시급제 급여 관리 프로그램</h3>
           <a class="download"
@@ -115,29 +164,11 @@ footer p{margin:0 0 6px}
       </div>
     </section>
 
-    <section class="column" aria-labelledby="cat1">
+    <!-- 세 번째 열: 퇴직금 -->
+    <section class="column" aria-labelledby="retirement">
       <header class="category">
-        <span class="number">02</span>
-        <h2 id="cat1">4대보험</h2>
-        <span class="count">1</span>
-      </header>
-
-      <div class="cards">
-        <article class="card">
-          <h3>(급여)4대보험내역 자동 입력 프로그램</h3>
-          <a class="download"
-             href="https://buseo.sen.go.kr/buseo/bu10/user/bbs/BD_selectBbs.do?q_rowPerPage=10&amp;q_currPage=1&amp;q_sortName=&amp;q_sortOrder=&amp;q_searchKeyTy2=1005&amp;q_searchStartDt=&amp;q_searchEndDt=&amp;q_bbsSn=1240&amp;q_bbsDocNo=20240313091143910&amp;q_clsfNo=&amp;q_searchKeyTy=ttl___1002&amp;q_searchVal=%EC%97%91%EC%85%80"
-             target="_blank" rel="noopener noreferrer">
-            다운로드 <span aria-hidden="true">↗</span>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section class="column" aria-labelledby="cat2">
-      <header class="category">
-        <span class="number">03</span>
-        <h2 id="cat2">퇴직금</h2>
+        <span class="number">04</span>
+        <h2 id="retirement">퇴직금</h2>
         <span class="count">2</span>
       </header>
 
@@ -162,32 +193,15 @@ footer p{margin:0 0 6px}
       </div>
     </section>
 
-    <section class="column" aria-labelledby="cat3">
+    <!-- 네 번째 열: 복무 -->
+    <section class="column" aria-labelledby="service">
       <header class="category">
-        <span class="number">04</span>
-        <h2 id="cat3">복무</h2>
-        <span class="count">7</span>
+        <span class="number">05</span>
+        <h2 id="service">복무</h2>
+        <span class="count">5</span>
       </header>
 
       <div class="cards">
-        <article class="card">
-          <h3>계약제교원 공개채용 업무자동화 프로그램</h3>
-          <a class="download"
-             href="http://sdgjedu.sen.go.kr/CMS/admserv/admserv06/admserv0606/admserv060601/1326037_5337.html"
-             target="_blank" rel="noopener noreferrer">
-            다운로드 <span aria-hidden="true">↗</span>
-          </a>
-        </article>
-
-        <article class="card">
-          <h3>기간제근로자 공개채용 업무자동화 프로그램</h3>
-          <a class="download"
-             href="http://sdgjedu.sen.go.kr/CMS/admserv/admserv06/admserv0606/admserv060601/1325380_5337.html"
-             target="_blank" rel="noopener noreferrer">
-            다운로드 <span aria-hidden="true">↗</span>
-          </a>
-        </article>
-
         <article class="card">
           <h3>교직원 인사(휴복직) 원클릭 프로그램</h3>
           <a class="download"
@@ -230,7 +244,7 @@ footer p{margin:0 0 6px}
         <article class="card">
           <h3>연간근무일수</h3>
           <p class="email">limhj008@sen.go.kr</p>
-          <p class="email update-source">출처: gogoquick@sen.go.kr</p>
+          <p class="email update-source">gogoquick@sen.go.kr</p>
           <strong class="update-label">Update</strong>
           <a class="download"
              href="https://drive.google.com/uc?export=download&amp;id=1_r4M-_9MCZhUlBYs9ZdzIi22smQ3TAiu">
@@ -240,25 +254,28 @@ footer p{margin:0 0 6px}
       </div>
     </section>
 
-    <section class="column" aria-labelledby="cat4">
-      <header class="category">
-        <span class="number">05</span>
-        <h2 id="cat4">세외통장</h2>
-        <span class="count">1</span>
-      </header>
+    <!-- 다섯 번째 열: 세외통장 / 타교육청 누리집 -->
+    <div class="column">
+      <section aria-labelledby="bank">
+        <header class="category">
+          <span class="number">06</span>
+          <h2 id="bank">세외통장</h2>
+          <span class="count">1</span>
+        </header>
 
-      <div class="cards">
-        <article class="card">
-          <h3>세외 출납검사서</h3>
-          <p class="email">gogoquick@sen.go.kr</p>
-          <a class="download"
-             href="https://drive.google.com/uc?export=download&amp;id=1gY0wv1Q4BZDffDSlDwJsKSPcbUQqcGP_">
-            다운로드 <span aria-hidden="true">↓</span>
-          </a>
-        </article>
-      </div>
+        <div class="cards">
+          <article class="card">
+            <h3>세외 출납검사서</h3>
+            <p class="email">gogoquick@sen.go.kr</p>
+            <a class="download"
+               href="https://drive.google.com/uc?export=download&amp;id=1gY0wv1Q4BZDffDSlDwJsKSPcbUQqcGP_">
+              다운로드 <span aria-hidden="true">↓</span>
+            </a>
+          </article>
+        </div>
+      </section>
 
-      <section aria-labelledby="other-sites" style="margin-top:28px">
+      <section class="subcategory" aria-labelledby="other-sites">
         <header class="category">
           <h2 id="other-sites" style="font-size:16px">
             타교육청 업무자동화 누리집
@@ -321,13 +338,12 @@ footer p{margin:0 0 6px}
           </div>
         </div>
       </section>
-    </section>
+    </div>
 
   </div>
 
   <footer>
-    <p>구글 드라이브 자료는 다운로드 링크로 연결되며, 구글 스프레드시트 자료는 엑셀 파일로 다운로드됩니다.</p>
-    <p>교육청 게시물과 외부 누리집은 새 창으로 열립니다. 이메일은 출처 정보입니다.</p>
+    <p> 이메일은 출처 정보입니다.</p>
   </footer>
 </main>
 </body>
